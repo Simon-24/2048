@@ -147,8 +147,8 @@ Camera:
   m_GameObject: {fileID: 301961567}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.053132802, g: 0.05448263, b: 0.05660379, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -188,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301961567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 1.3, y: 1.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -302,6 +302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 509567787}
+  - component: {fileID: 509567788}
   m_Layer: 0
   m_Name: ScriptHolder
   m_TagString: Untagged
@@ -323,6 +324,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &509567788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509567786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76b00ca553a28e4aa9d25ccf2d09089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistancePerBlock: 1.05
+  GO2: {fileID: 2804605026754472387, guid: 42b21bcabe7db684a955ad199f921759, type: 3}
+  GO4: {fileID: 2804605026754472387, guid: f18c44cbb740b3a42abcd0fb8d74ab02, type: 3}
+  GO8: {fileID: 2804605026754472387, guid: 087052f809484c649b4e7b746b0b768f, type: 3}
+  GO16: {fileID: 2804605026754472387, guid: 52dc22ea87c674945b4b96ee9ff5802a, type: 3}
+  GO32: {fileID: 2804605026754472387, guid: b2f8974b560ec144893fccf28a1ca9b9, type: 3}
+  GO64: {fileID: 2804605026754472387, guid: 3e7787450a0fefd41bea5ef3163a2e7c, type: 3}
+  GO128: {fileID: 2804605026754472387, guid: 076ca060d11f14c4680f696e6ea525fc, type: 3}
+  GO256: {fileID: 2804605026754472387, guid: 6cced0e775ce9e6448d6e4baf00156d6, type: 3}
+  GO512: {fileID: 2804605026754472387, guid: 836973a4c00bea949bf491270edff93c, type: 3}
+  GO1024: {fileID: 2804605026754472387, guid: b3d1f8ab24ccad445966c842fe430f41, type: 3}
+  GO_Blank: {fileID: 2804605026754472387, guid: 2689dbc65e25cef44ae1b901fbf22bca,
+    type: 3}
 --- !u!1 &536385321
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &598330636
